@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_clone/features/presentation/themes/dark_theme_data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,8 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-   
-    );
+    return MaterialApp(theme: DarkTheme.youtubeDarkTheme,);
   }
 }
