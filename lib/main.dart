@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_clone/features/presentation/screens/splash_screen.dart';
 import 'package:youtube_clone/features/presentation/themes/dark_theme_data.dart';
 
 void main() {
@@ -10,6 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: DarkTheme.youtubeDarkTheme,);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: DarkTheme.youtubeDarkTheme,
+      home: SplashScreen(),
+    );
   }
 }
